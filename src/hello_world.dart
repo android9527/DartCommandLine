@@ -12,12 +12,6 @@ void main(List name) {
 yj\n*/ */
     """);
 
-// 这是⼀个⾏注释
-  /* 这是⼀个多⾏的
-     块注释。 */
-  /* /*
-   */
-   * */
   var result = printPerson("zhangsan", 18);
   print(result);
   print(printPerson("zhangsan", 18));
