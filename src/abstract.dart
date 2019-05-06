@@ -1,4 +1,4 @@
-// 抽象类使用 abstract 表示
+// 抽象类使用 abstract 表示，不能被直接实例化
 // 抽象类可以没有抽象方法
 abstract class Person {
   // 抽象方法不用 abstract 修饰
