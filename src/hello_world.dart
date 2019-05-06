@@ -16,7 +16,7 @@ yj\n*/ */
   print(result);
   print(printPerson("zhangsan", 18));
 
-  Function function = getPerson;
+  Function function = _getPerson;
   function("zhangsan", 18);
 
   var func = (str) => str;
@@ -29,10 +29,10 @@ class Test {
   static var b = 1;
 }
 
-String getPerson(String name, int age) {
+String _getPerson(String name, int age) {
   return "name = $name, age = $age";
 }
 printPerson(name, age) {
   print("name = $name, age = $age");
 }
-//getPerson(name, age) => "name = $name, age = $age";
+getPerson(name, age) => "name = $name, age = $age";
