@@ -2,16 +2,19 @@ void main() {
   Person p = Person.withName("zhangsan");
   print(p.name);
 
-  Person person;
+  var person;
   // ? 不为 null 则执行
   person?.work();
-  person = new Person("zahng ", 15);
+//  person = new Person("zahng ", 15);
 
   if (person is Person) {
     print(person.name);
+    // .. 级联操作符
+    person
+      ..name = "TOM"
+      ..age = 20
+      ..work();
   }
-  // .. 级联操作符
-  person..name = "TOM"..age = 20..work();
 }
 
 class Person {

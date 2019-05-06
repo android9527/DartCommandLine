@@ -1,4 +1,7 @@
 void main() {
+
+  num a ;
+  print(a);
   printPerson("zhangsan");
   printPerson("zhangsan", gender: 1);
   printPerson("zhangsan", gender: 1, age: 18);
@@ -31,7 +34,7 @@ listTimes(List list, f(item)) {
 }
 
 
-printPerson(name, {age = 18, gender = 0}) =>
+printPerson(name, {int age, gender = 0}) =>
     print("name = $name, age = $age, gender = $gender");
 
 printPerson2(name, [age = "18", gender = 1]) =>
